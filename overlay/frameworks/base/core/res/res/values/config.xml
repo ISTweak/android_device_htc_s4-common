@@ -87,4 +87,7 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareKeys">19</integer>
+
+    <!-- Diable lockscreen rotation by default -->
+    <bool name="config_enableLockScreenRotation">true</bool>
 </resources>
