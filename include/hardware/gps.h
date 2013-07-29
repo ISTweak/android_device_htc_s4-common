@@ -125,10 +125,10 @@ typedef uint16_t GpsLocationFlags;
 #define GPS_CAPABILITY_SINGLE_SHOT      0x0000008
 /** GPS supports on demand time injection */
 #define GPS_CAPABILITY_ON_DEMAND_TIME   0x0000010
-/* Hybrid support, the Android Framework will query to see if this capability is set before using the ulp functionalities in HAL */
-#define ULP_CAPABILITY                  0x0000020
 /** GPS supports Geofencing  */
-#define GPS_CAPABILITY_GEOFENCING       0x0000030
+#define GPS_CAPABILITY_GEOFENCING       0x0000020
+/* Hybrid support, the Android Framework will query to see if this capability is set before using the ulp functionalities in HAL */
+#define ULP_CAPABILITY                  0x0000040
 
 /** Flags used to specify which aiding data to delete
     when calling delete_aiding_data(). */
@@ -387,6 +387,11 @@ typedef struct {
     UlpDataUsageCriteria preferred_data_usage;
     bool intermediate_pos_report_enabled;
 } UlpLocationCriteria;
+
+/**
+ * Name for the GPS_Geofencing interface.
+ */
+#define GPS_GEOFENCING_INTERFACE   "gps_geofencing"
 
 /** Represents a location. */
 typedef struct {
