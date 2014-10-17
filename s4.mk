@@ -44,10 +44,13 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     lpm.rc \
+    chargeled \
     choice_fn \
-    power_test \
+    detect_key \
     offmode_charging \
-    detect_key
+    offmode_charging_res_images \
+    offmode_charging_warn_res_images \
+    power_test
 
 # Audio config
 PRODUCT_COPY_FILES += \
@@ -73,7 +76,8 @@ PRODUCT_PACKAGES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
+    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml
 
 # Common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
