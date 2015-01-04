@@ -281,6 +281,12 @@ typedef uint16_t AGpsStatusValue;
  * Name for the AGPS-RIL interface.
  */
 #define AGPS_RIL_INTERFACE      "agps_ril"
+
+/**
+ * Name for the GPS_Geofencing interface.
+ */
+#define GPS_GEOFENCING_INTERFACE   "gps_geofencing"
+
 /**
 * Name for ULP Phone Context Interface
 */
