@@ -55,12 +55,6 @@ PRODUCT_COPY_FILES += \
 
 # Recovery
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
-PRODUCT_PACKAGES += \
-    init.recovery.qcom.rc \
-    choice_fn \
-    power_test \
-    offmode_charging \
-    detect_key
 
 # Thermal
 PRODUCT_COPY_FILES += \

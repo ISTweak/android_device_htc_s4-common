@@ -130,16 +130,6 @@
 /dev/ttyHSUSB1                                 0600    system system
 /dev/ttyHSUSB3                                 0600    system system
 
-# felica device file nodes
-/dev/felica               0666  root         root
-/dev/felica_pon           0666  root         root
-/dev/felica_cen           0666  root         root
-/dev/felica_rfs           0444  root         root
-/dev/felica_rws           0666  root         root
-/dev/felica_int           0444  root         root
-/dev/felica_int_poll      0400  root         root
-/dev/felica_uid           0222  root         root
-
 # NFC
 /dev/pn544                0600   nfc        nfc
 
